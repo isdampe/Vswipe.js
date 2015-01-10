@@ -5,6 +5,7 @@ Cross browser compatibility hasn't been fully checked.
 ##Usage
 See demo.html, or:
 
+```
 <div id="swipe">Swipe me</div>
 <script src="vswipe.js"></script>
 <script>
