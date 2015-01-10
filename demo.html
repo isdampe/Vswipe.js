@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Swipe.js</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    #swipe {
+      width: 800px;
+      height: 500px;
+      background: #111;
+      margin: 100px auto;
+      text-align: center;
+      line-height: 500px;
+      color: #ccc;
+    }
+  </style>
+</head>
+<body>
+  <div id="swipe">Swipe me</div>
+  <script src="vswipe.js"></script>
+  <script>
+    swipe.attach("swipe", function(swipe){
+      if ( swipe > 0 ) {
+        var direction = "";
+        switch ( swipe ) {
+          case 1:
+            direction = "left";
+            break;
+          case 2:
+            direction = "right";
+            break;
+          case 3:
+            direction = "up";
+            break;
+          case 4:
+            direction = "down";
+            break;
+        }
+        alert("You swiped " + direction);
+      }
+    });
+  </script>
+</body>
+</html>
